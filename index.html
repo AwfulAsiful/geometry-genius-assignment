@@ -20,7 +20,7 @@
             --dark-3: rgba(65, 65, 65, 1);
             --btn-bg: #1090D8;
             --nav-bg: rgba(16, 144, 216, 0.1);
-            --pink:rgba(251, 188, 237, 1);
+            --pink: rgba(251, 188, 237, 1);
         }
 
         .btn-primary-sm {
@@ -35,15 +35,19 @@
         .btn-primary-lg {
             background-color: var(--btn-bg);
             color: white;
-            padding: 1rem 7rem;
+            padding: 1rem 4.5rem;
             border-radius: .5rem;
             font-size: 1.25rem;
             font-weight: bold;
         }
+       
+        
+
+        
     </style>
 </head>
 
-<body class="max-w-[90rem] mx-auto pt-[3.125rem] px-[3.125rem]">
+<body class="max-w-[90rem] mx-auto pt-[3.125rem] px-[3.125rem] pb-[5.6rem] ">
 
     <!-- navbar starts -->
     <nav
@@ -58,10 +62,11 @@
     </nav>
     <!-- navbar ends -->
 
-    <div class="main-container grid grid-cols-12 mt-[3.125rem]">
+    <div class="main-container mt-[3.125rem] md:grid grid-cols-12 ">
         <div class="shapes-container col-span-8">
             <!-- triangle starts -->
-            <div class="shapes-1 card w-[27.5rem] border-2 flex flex-col items-center pb-[3.125rem] hover:bg-[var(--pink)]" id="triangle ">
+            <div class="shapes-1 card w-[20rem] border-2 flex flex-col items-center pb-[3.125rem] hover:bg-[var(--pink)] lg:w-[27.5rem]"
+                id="triangle">
                 <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quo? -->
                 <div class="card-body">
                     <img src="images/triangle.png" alt="">
@@ -70,8 +75,8 @@
                         <p class="text-[var(--dark-3)]">Area (A) = 0.5 x b x h </p>
                     </div>
                     <div class="calc-input">
-                        <input type="number" placeholder="b" class="input input-bordered w-[6rem]"> cm
-                        <input type="number" placeholder="h" class="input input-bordered w-[6rem]"> cm
+                        <input type="number" placeholder="b" class="input input-bordered w-[6rem]" id="inp-1"> cm
+                        <input type="number" placeholder="h" class="input input-bordered w-[6rem]" id="inp-2"> cm
                     </div>
                 </div>
                 <div class="card-actions">
@@ -79,18 +84,22 @@
                 </div>
             </div>
             <!-- triangle ends -->
-            <div class="shapes-2">Quas possimus fugit expedita aliquam perferendis eaque numquam dolores sunt!</div>
-            <div class="shapes-3">Aspernatur eum officiis dignissimos ut, facere quis numquam aliquam commodi?</div>
-            <div class="shapes-4">Sapiente, ullam nulla magnam illum voluptatem deleniti aliquam atque temporibus?</div>
-            <div class="shapes-5">Dolorem harum placeat quis nesciunt voluptatibus numquam eum ipsam voluptate?</div>
-            <div class="shapes-6">Quasi ut impedit quas possimus deserunt consectetur porro ea repellat.</div>
+
         </div>
-        <div class="calc-container col-span-4">
-            <div class="calc-">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus harum neque quos
-                quibusdam assumenda distinctio, quis exercitationem laboriosam ex dolorem provident qui, cupiditate,
-                error aspernatur! Voluptatibus facilis accusamus ut delectus?</div>
+        <div class="calc-cart col-span-4 border-2 border-[var(--btn-bg)] pt-[1.8rem] h-auto max-h-[80vh]">
+            <h2 class="underline text-center text-[var(--dark-1)] text-[1.25rem] font-bold">Area Calculation</h2>
+
+            <div class="cart-items-container">
+                <ol id="shapes-list" class="text-center list-decimal list-inside pt-[1.125rem]">
+
+                </ol>
+            </div>
+
         </div>
     </div>
+
+
+    <script src="Js/calc.js"></script>
 </body>
 
 </html>
