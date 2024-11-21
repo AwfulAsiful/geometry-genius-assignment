@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --dark-1: rgba(17, 17, 17, 0.8);
+            --dark-2: rgba(17, 17, 17, 0.6);
+            --dark-3: rgba(65, 65, 65, 1);
+            --btn-bg: #1090D8;
+            --nav-bg: rgba(16, 144, 216, 0.1);
+            --pink:rgba(251, 188, 237, 1);
+        }
+
+        .btn-primary-sm {
+            background-color: var(--btn-bg);
+            color: white;
+            padding: .6rem 2.5rem;
+            border-radius: .5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .btn-primary-lg {
+            background-color: var(--btn-bg);
+            color: white;
+            padding: 1rem 7rem;
+            border-radius: .5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="max-w-[90rem] mx-auto pt-[3.125rem] px-[3.125rem]">
+
+    <!-- navbar starts -->
+    <nav
+        class="flex flex-col items-center gap-y-6 bg-[var(--nav-bg)] px-[2.5rem] py-[1.25rem] md:flex-row md:justify-between">
+        <div class="logo-txt">
+            <h2 class="text-[var(--dark-1)] text-[2.8rem] font-bold">Interactive</h2>
+            <p class="text-[1.8rem] text-[var(--dark-2)] font-medium">Geometry Genius</p>
+        </div>
+        <div>
+            <button class="btn-primary-sm">Blog</button>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <div class="main-container grid grid-cols-12 mt-[3.125rem]">
+        <div class="shapes-container col-span-8">
+            <!-- triangle starts -->
+            <div class="shapes-1 card w-[27.5rem] border-2 flex flex-col items-center pb-[3.125rem] hover:bg-[var(--pink)]" id="triangle ">
+                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quo? -->
+                <div class="card-body">
+                    <img src="images/triangle.png" alt="">
+                    <div class="formula text-center my-[2.5rem]">
+                        <h2 class="text-[1.56rem] text-[var(--dark-3)] font-bold">Triangle</h2>
+                        <p class="text-[var(--dark-3)]">Area (A) = 0.5 x b x h </p>
+                    </div>
+                    <div class="calc-input">
+                        <input type="number" placeholder="b" class="input input-bordered w-[6rem]"> cm
+                        <input type="number" placeholder="h" class="input input-bordered w-[6rem]"> cm
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-primary-lg" id="calc-btn">Calculate</button>
+                </div>
+            </div>
+            <!-- triangle ends -->
+            <div class="shapes-2">Quas possimus fugit expedita aliquam perferendis eaque numquam dolores sunt!</div>
+            <div class="shapes-3">Aspernatur eum officiis dignissimos ut, facere quis numquam aliquam commodi?</div>
+            <div class="shapes-4">Sapiente, ullam nulla magnam illum voluptatem deleniti aliquam atque temporibus?</div>
+            <div class="shapes-5">Dolorem harum placeat quis nesciunt voluptatibus numquam eum ipsam voluptate?</div>
+            <div class="shapes-6">Quasi ut impedit quas possimus deserunt consectetur porro ea repellat.</div>
+        </div>
+        <div class="calc-container col-span-4">
+            <div class="calc-">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus harum neque quos
+                quibusdam assumenda distinctio, quis exercitationem laboriosam ex dolorem provident qui, cupiditate,
+                error aspernatur! Voluptatibus facilis accusamus ut delectus?</div>
+        </div>
+    </div>
+</body>
+
+</html>
